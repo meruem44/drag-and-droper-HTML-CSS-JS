@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap');
+
+html {
+    font-family: Nunito;
+    background-color: #121214;
+    color: #fff;
+    font-size: 20px;
+}
+
+.boards {
+    display: flex;
+}
+
+.board {
+    background-color: #202024;
+    border: 1px solid #7159c1ff;
+    border-radius: 4px;
+    margin: 0 16px;
+}
+
+.board h3 {
+    padding: 16px;
+    margin: 0;
+    color: #7159c1cc;
+}
+
+.dropzone {
+    padding: 16px;
+    min-width: 282px;
+    min-height: 200px;
+    margin: 0 16px;
+}
+
+.dropzone .card {
+    padding: 16px;
+    box-shadow: 0 2px 2px -1px #7159c1cc;
+    width:250px;
+    margin: 25px 0;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: #1a1a1c;
+}
+
+.dropzone .status {
+    width: 30px;
+    height: 8px;
+    background-color: gray;
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
+
+.status.green {
+    background-color: #23d2ac;
+}
+
+.status.blue {
+    background-color: #33adff;
+}
+
+.status.red {
+    background-color: red;
+}
+
+.highlight {
+    background-color: #7159c112 ;
+}
+
+
+.card, .dropzone {
+    transition: 450ms;
+};
+
+.isDraging {
+    cursor: move;
+    opacity: 0.3;
+}
+
+.over {
+    background-color: #cd131711;
+}
